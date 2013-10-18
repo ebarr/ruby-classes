@@ -1,4 +1,4 @@
-require './airport'
+require './airporte'
 
 def start_of_page
   html = '<!DOCTYPE html>
@@ -54,5 +54,16 @@ puts start_of_page
   airport.code = airport_code
   puts html_for_airport(airport)
 end
+
+
+# puts "What airport are you going to today?"
+# citycode = gets.chomp
+
+# # airport = Airport.new
+# # airport.code = "MDW"
+# ['ORD', 'LAX', 'BOS', 'MDW', 'PDX', 'AUS'].each do |airport_code|
+# airport = Airport.new
+# airport.code = airport_code
+
 
 puts end_of_page
