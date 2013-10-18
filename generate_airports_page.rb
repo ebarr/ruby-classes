@@ -61,9 +61,6 @@ end
 
 # # airport = Airport.new
 # # airport.code = "MDW"
-# ['ORD', 'LAX', 'BOS', 'MDW', 'PDX', 'AUS'].each do |airport_code|
-# airport = Airport.new
-# airport.code = airport_code
 
 
 puts end_of_page
