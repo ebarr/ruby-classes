@@ -1,0 +1,9 @@
+<h1>Airports</h1>
+<% item_number = 0 %>
+
+<% @airports.each do |airport_code| %>
+<% airport = Airport.new %>
+<% airport.code = airport_code[:code] %>
+  <h2><a href="/details?id=<%= item_number %>"><%= airport.code %></a></h2>
+<% item_number = item_number + 1 %>
+<% end %>

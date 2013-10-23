@@ -1,5 +1,5 @@
-require './airports_api.rb'
-require './weather_api'
+require 'airports_api.rb'
+require 'weather_api'
 
 class Airport
   def code=(my_airport_code)

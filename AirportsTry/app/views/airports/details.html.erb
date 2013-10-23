@@ -1,0 +1,20 @@
+<div>
+<h1>Airport Details</h1>
+
+<p><%= @airport[:code] %></p>
+<p><%= @airport[:city] %></p>
+
+<% airport = Airport.new %>
+<% airport.code = @airport[:code] %>
+
+<p>Temperature</p>
+<%= airport.temperature %>&deg;F
+<p>Delay</p>
+<% if airport.delay < 15 %>
+On time
+<% elsif airport.delay < 30 %>
+Delayed
+<% else %>
+No
+<% end %>
+</div>
